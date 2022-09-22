@@ -22,3 +22,15 @@ test('Validation test', async ({ page }) => {
     await submitButton.click()
     await expect(errorMessage).toBeVisible()
 })
+
+// show report
+// npx playwright show-report
+// config report ['list']
+// options for traces https://playwright.dev/docs/trace-viewer#recording-a-trace
+// retain on failure, on first retry, on, off
+// traces: 'on'
+// show traces in report
+
+// screenshots https://playwright.dev/docs/test-configuration#automatic-screenshots
+// on, off, only on failure
+// use:  screenshot: 'on',
