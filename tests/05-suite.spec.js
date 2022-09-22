@@ -1,4 +1,10 @@
-const { test, expect } = require('@playwright/test')
+// Now look at so called test hooks
+// test.describe - make a test suite
+
+// lets use our existing test cases
+// move common part to testBeforeEach.
+
+import { test, expect } from '@playwright/test'
 
 test.describe('Tesena tests', () => {
 

@@ -1,4 +1,14 @@
-const { test, expect } = require('@playwright/test')
+// lets look at handling of checkboxes
+// we are going to use this dummy website
+// 'https://the-internet.herokuapp.com/'
+
+// test
+// go to page
+// expect not checked checkbox
+// check it
+// expect it is checked
+
+import { test, expect } from '@playwright/test'
 
 test('checkboxes', async ({ page }) => {
     await page.goto('https://the-internet.herokuapp.com/checkboxes')

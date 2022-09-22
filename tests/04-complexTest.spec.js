@@ -1,4 +1,13 @@
-const { test, expect } = require('@playwright/test')
+// Now we are ready for complex test
+// Test of validation
+// go to tesena homepage 'https://www.tesena.com/'
+// click on Contact us
+// expect error message not visible
+// input just name
+// click submit button
+// expect error message visible
+
+import { test, expect } from '@playwright/test'
 
 test('Validation test', async ({ page }) => {
     const contactButton = page.locator('a:has-text("Contact us")')

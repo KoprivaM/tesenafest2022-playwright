@@ -4,9 +4,9 @@
 
 // run: npx playwright test /01-basic.spec.js --headed
 
-const { test, expect } = require('@playwright/test')
+import { test, expect } from '@playwright/test'
 
-// we use "test" for test
+// we use "test" function for test
 // first argument = test name
 // second argument = callback function = our test
 // the function is asynchronous
@@ -18,6 +18,7 @@ test('tesena title', async ({ page }) => {
     await page.goto('https://www.tesena.com/')
 
     // then we'll use simple expectation for title of the page
+    // playwright has function "expect" for this
     await expect(page).toHaveTitle(/Tesena/)
 })
 

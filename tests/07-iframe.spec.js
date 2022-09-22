@@ -1,4 +1,9 @@
-const { test, expect } = require('@playwright/test')
+// playwright can handle iframes right from the box
+// lets look this page
+// text box is in iframe
+// lets try simple approach
+
+import { test } from '@playwright/test'
 
 test('iframe wrong', async ({ page }) => {
     await page.goto('https://the-internet.herokuapp.com/iframe')
@@ -9,6 +14,8 @@ test('iframe wrong', async ({ page }) => {
 
     await page.pause()
 })
+
+// now lets use the correct way - frameLocator
 
 test('iframe right', async ({ page }) => {
     await page.goto('https://the-internet.herokuapp.com/iframe')

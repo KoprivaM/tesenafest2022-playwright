@@ -1,4 +1,8 @@
-const { test, expect } = require('@playwright/test')
+// lets try some uploading
+// go to upload part of the page
+// firstly we create txt file to upload
+
+import { test } from '@playwright/test'
 
 test('upload', async ({ page }) => {
     await page.goto('https://the-internet.herokuapp.com/upload')
