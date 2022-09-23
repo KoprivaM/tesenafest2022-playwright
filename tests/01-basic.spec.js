@@ -15,7 +15,7 @@ test('tesena title', async ({ page }) => {
 
     // every step starts with await
     // fistly we need to go to our web adress
-    await page.goto('https://www.tesena.com/')
+    await page.goto('https://www.tesena.com/en/')
 
     // then we'll use simple expectation for title of the page
     // playwright has function "expect" for this
