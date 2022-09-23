@@ -2,7 +2,6 @@
 // you can find more in documentation
 // https://playwright.dev/docs/test-assertions
 
-
 // the test:
 // go to tesena homepage 'https://www.tesena.com/'
 // expect contact us button is visible and has text "Contact us"
